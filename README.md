@@ -28,4 +28,4 @@ The project is in the development phase. The basic functionalities have been imp
 
 ### Useful Links
 
-- [Click here to view my website](https://viviannyk.github.io/)
+- [Click here to view my website]([https://viviannyk.github.io/](https://viviannyk.github.io/Portfolio/))
