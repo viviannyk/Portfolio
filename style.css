@@ -9,16 +9,19 @@ body {
     background-color: #1a1a2e;
     color: #fff;
     line-height: 1.6;
+    padding-top: 0px; /* Espaço para compensar o header fixo */
 }
 
 header {
     padding: 20px;
-    width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    transition: all 0.3s ease; /* Suaviza a transição quando o header fixa */
-    background-color: transparent; /* Garante que não tenha fundo */
+    transition: all 0.3s ease;
+    background-color: transparent;
+    position: absolute;
+    margin-left: 80px; /* Move o header para a direita */
+    width: calc(100% - 80px); /* Ajusta a largura para compensar o deslocamento */
 }
 
 /* Classe para header fixo */
@@ -29,21 +32,21 @@ header {
     z-index: 1000;
     background-color: transparent; /* Garante que o header fixo também não tenha fundo */
 }
+.social-icons a {
+    color: #fff; /* Ícones brancos por padrão */
+    margin: 0 10px; /* Espaçamento entre ícones */
+    font-size: 20px; /* Tamanho dos ícones */
+    transition: color 0.3s; /* Transição suave para mudança de cor */
+}
 
+.social-icons a:hover {
+    color: #D46AFF; /* Cor quando o mouse estiver sobre o ícone */
+}
 
 nav {
     display: flex;
-    justify-content: space-between; /* Logo à esquerda e o menu no centro */
     align-items: center;
-}
-
-/* Logo no canto esquerdo */
-.logo {
-    margin-right: auto; /* Garante que a logo fique à esquerda */
-}
-
-.logo-img {
-    width: 70px; /* Ajuste o tamanho da logo */
+    justify-content: space-between;
 }
 
 /* Centralizar o menu */
