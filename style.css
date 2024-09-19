@@ -12,13 +12,13 @@ body {
 }
 
 header {
-    /*background-color: rgba(0, 0, 0, 0.3); /* Defina o fundo como levemente transparente */
     padding: 20px;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
     transition: all 0.3s ease; /* Suaviza a transição quando o header fixa */
+    background-color: transparent; /* Garante que não tenha fundo */
 }
 
 /* Classe para header fixo */
@@ -26,8 +26,8 @@ header {
     position: fixed; /* Faz o header ficar fixo no topo da página */
     top: 0;
     width: 100%;
-    /*background-color: rgba(0, 0, 0, 0.8); /* Cor mais escura quando fixo */
     z-index: 1000;
+    background-color: transparent; /* Garante que o header fixo também não tenha fundo */
 }
 
 
@@ -40,6 +40,10 @@ nav {
 /* Logo no canto esquerdo */
 .logo {
     margin-right: auto; /* Garante que a logo fique à esquerda */
+}
+
+.logo-img {
+    width: 70px; /* Ajuste o tamanho da logo */
 }
 
 /* Centralizar o menu */
