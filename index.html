@@ -6,57 +6,53 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> <!-- Vue.js -->
     <link rel="icon" href="Imagem\LogoVK.png" type="image/png">
-
 </head>
 <body>
+  <div id="app">
     <header class="header">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="social-icons">
-                <a href="http://linkedin.com/in/viviannykhatly" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/viviannyk" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://instagram.com/khaatly" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        </nav>
+      <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">Resume</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="social-icons">
+              <a href="http://linkedin.com/in/viviannykhatly" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/viviannyk" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://instagram.com/khaatly" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+      </nav>
     </header>
 
     <section class="hero">
         <div class="container">
             <div class="profile-container">
-                <img src="Imagem\MinhaFoto1.jpeg" alt="Profile Image" class="profile-img">
+                <img :src="profileImage" alt="Profile Image" class="profile-img">
             </div>
-            <h1>Vivianny Khatly</h1>
-            <p>Data Science and AI & Full Stack Developer</p>
+            <h1>{{ name }}</h1>
+            <p>{{ title }}</p>
         </div>
     </section>
 
     <section class="about-me">
         <div class="container">
             <div class="about-content">
-                <img src="Imagem\About-img.jpg" alt="About Image" class="about-img">
+                <img :src="aboutImage" alt="About Image" class="about-img">
             
                 <div class="about-text">
-                    <h2>Discover</h2>
-                    <h3>About Me</h3>
-                    <p> I am an undergraduate student in Data Science and Artificial Intelligence at UFPB (Federal University of Paraíba). 
-                        Currently, I am focusing my studies on full-stack development, databases, and AI. I have experience in all three areas, but I am always striving to improve and learn more. 
-                        I have strong teamwork skills, proven through my participation in TAIL (Technology and Artificial Intelligence League), where I worked with exceptional people, learned a lot, 
-                        and shared knowledge.
-                    </p>
+                    <h2>{{ aboutHeader }}</h2>
+                    <h3>{{ aboutSubheader }}</h3>
+                    <p>{{ aboutText }}</p>
                     <div class="info-box">
                         <ul class="info-list">
-                            <li><strong>Name:</strong> Vivianny Khatly</li>
-                            <li><strong>Age:</strong> 21</li>
-                            <li><strong>Experience:</strong> 3 Years</li>
-                            <li><strong>Address:</strong> João Pessoa - PB</li>
+                            <li><strong>Name:</strong> {{ name }}</li>
+                            <li><strong>Age:</strong> {{ age }}</li>
+                            <li><strong>Experience:</strong> {{ experience }}</li>
+                            <li><strong>Address:</strong> {{ address }}</li>
                         </ul>
                     </div>
                     <a href="#" class="btn-download">Download CV</a>
@@ -66,8 +62,26 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Vivianny Khatly. All Rights Reserved.</p>
+        <p>&copy; 2024 {{ name }}. All Rights Reserved.</p>
     </footer>
+  </div>
+
+  <script>
+    new Vue({
+      el: "#app",
+      data: {
+        name: "Vivianny Khatly",
+        title: "Data Science and AI & Full Stack Developer",
+        profileImage: "Imagem/MinhaFoto1.jpeg",
+        aboutImage: "Imagem/About-img.jpg",
+        aboutHeader: "Discover",
+        aboutSubheader: "About Me",
+        aboutText: "I am an undergraduate student in Data Science and Artificial Intelligence at UFPB (Federal University of Paraíba). Currently, I am focusing my studies on full-stack development, databases, and AI. I have experience in all three areas, but I am always striving to improve and learn more. I have strong teamwork skills, proven through my participation in TAIL (Technology and Artificial Intelligence League), where I worked with exceptional people, learned a lot, and shared knowledge.",
+        age: 22,
+        experience: "3 Years",
+        address: "João Pessoa - PB",
+      }
+    });
+  </script>
 </body>
 </html>
-
