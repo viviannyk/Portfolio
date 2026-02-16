@@ -10,10 +10,10 @@ function Hero() {
     >
       <div className="container">
         <div className="profile-container">
-          <img src={minhaFoto} alt="Profile" className="profile-img" />
+          <img src={minhaFoto} alt="Vivianny Khatly" className="profile-img" />
         </div>
         <h1>Vivianny Khatly</h1>
-        <p>Data Science and AI & Software Developer</p>
+        <p>Data Science and AI | R&D Researcher</p>
       </div>
     </section>
   );

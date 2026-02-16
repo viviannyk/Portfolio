@@ -37,6 +37,8 @@ header {
     margin: 0 10px; /* Espaçamento entre ícones */
     font-size: 20px; /* Tamanho dos ícones */
     transition: color 0.3s; /* Transição suave para mudança de cor */
+    z-index: 1001; /* Garante que os ícones estejam acima de outros elementos */
+    position: relative; /* Necessário para o z-index funcionar */
 }
 
 .social-icons a:hover {
@@ -91,7 +93,7 @@ nav ul li a:hover {
     height: 150px; /* Ajuste o tamanho da imagem do perfil */
     border-radius: 50%; /* Torna a imagem do perfil circular */
     overflow: hidden;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto; 
   }
   
   .profile-img {

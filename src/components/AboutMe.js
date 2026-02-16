@@ -11,22 +11,23 @@ function AboutMe() {
             <h2>Discover</h2>
             <h3>About Me</h3>
             <p>
-              I am an undergraduate student in <strong>Data Science and Artificial Intelligence at UFPB</strong>. 
-              My career is driven by solving complex problems through <strong>Generative AI, multi-agent architectures, and Full-stack development</strong>.
+              I am a <strong>Data Science and Artificial Intelligence</strong> student at UFPB. 
+              My expertise lies at the intersection of <strong>Data Engineering and Generative AI</strong>, 
+              where I develop autonomous pipelines and intelligent systems to solve complex problems.
             </p>
             <p>
-              Currently, I serve as an R&D Researcher at <strong>ITEMM</strong>, focusing on energy system modernization. 
-              I also lead the NLP department at <strong>TAIL (Technology and AI League)</strong>, where I coordinate the development of 
-              fact-checking frameworks and innovative AI pipelines. I have hands-on experience building autonomous 
-              data flows and intelligent automation for major industry players.
+              Currently, I am an R&D Researcher at <strong>ITEMM</strong>, focusing on data-driven 
+              solutions for energy systems. I also serve as the <strong>Director of NLP at TAIL</strong>, 
+              leading the development of end-to-end data normalization pipelines and fact-checking frameworks. 
+              My goal is to bridge the gap between raw data and actionable AI insights.
             </p>
             
             <div className="info-box">
               <ul className="info-list">
                 <li><strong>Name:</strong> Vivianny Khatly</li>
-                <li><strong>Focus:</strong> AI & Full-stack</li>
+                <li><strong>Main Focus:</strong> AI & Data Science</li>
+                <li><strong>Tech Stack:</strong> Python, SQL, LLMs, Docker</li>
                 <li><strong>Location:</strong> João Pessoa, Brazil</li>
-                <li><strong>Languages:</strong> English, Portuguese, Spanish</li>
               </ul>
             </div>
             
