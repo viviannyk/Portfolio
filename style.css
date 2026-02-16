@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1a1a2e;
+    color: #fff;
+    line-height: 1.6;
+    padding-top: 0px; /* Espaço para compensar o header fixo */
+}
+
+header {
+    padding: 20px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    position: absolute;
+    margin-left: 80px; /* Move o header para a direita */
+    width: calc(100% - 80px); /* Ajusta a largura para compensar o deslocamento */
+}
+
+/* Classe para header fixo */
+.fixed-header {
+    position: fixed; /* Faz o header ficar fixo no topo da página */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent; /* Garante que o header fixo também não tenha fundo */
+}
+.social-icons a {
+    color: #fff; /* Ícones brancos por padrão */
+    margin: 0 10px; /* Espaçamento entre ícones */
+    font-size: 20px; /* Tamanho dos ícones */
+    transition: color 0.3s; /* Transição suave para mudança de cor */
+}
+
+.social-icons a:hover {
+    color: #D46AFF; /* Cor quando o mouse estiver sobre o ícone */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Centralizar o menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex: 1; /* O menu ocupará o espaço central */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #D46AFF;
+}
+
+
+.hero {
+    text-align: center;
+    background: url('Imagemdefundo.jpeg') no-repeat center center/cover;
+    padding: 180px 0;
+}
+
+/* Estilo da imagem de perfil */
+.profile-img {
+    width: 180px; /* Tamanho menor que o container para mostrar o fundo */
+    height: 180px;
+    border-radius: 50%; /* Deixa a imagem circular */
+    object-fit: cover; /* Ajusta a imagem dentro do círculo */
+    position: relative;
+}
+
+/* Centralização do texto */
+.hero h1, .hero p {
+    text-align: center;
+    color: white;
+}
+
+
+.about-me {
+    padding: 50px 0;
+    background-color: #1a1a2e;
+}
+
+.about-content {
+    display: flex; /* Para alinhar imagem e texto lado a lado */
+    align-items: center; /* Para alinhar verticalmente */
+    justify-content: space-between; /* Garante que a imagem e o texto tenham espaço entre si */
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas pequenas */
+}
+
+.about-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.about-text {
+    max-width: 600px;
+    flex: 1; /* O texto ocupará o restante do espaço */
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #D46AFF;
+    margin-bottom: 10px;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about-text h3::after {
+    content: "";
+    display: block;
+    width: 100px; /* Tamanho do traço */
+    height: 2px; /* Espessura do traço mais fina */
+    background-color: #D46AFF; /* Cor do traço */
+    margin-top: 0px; /* Aproxima o traço do texto */
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.info-box {
+    border: 1px solid #D46AFF;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.info-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info-list li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #D46AFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px; /* Espaçamento superior para separar o botão da info-box */
+
+}
+
+.btn-download:hover {
+    background-color: #D46AFF;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+footer p {
+    color: #aaa;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
