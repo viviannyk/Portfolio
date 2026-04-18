@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Meu portfólio pessoal",
   "main": "src/index.js",
+  "homepage": "https://viviannyk.github.io/Portfolio",
   "scripts": {
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start"
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -28,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

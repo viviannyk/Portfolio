@@ -5,6 +5,7 @@ import minhaFoto from '../Imagem/MinhaFoto1.jpeg';
 function Hero() {
   return (
     <section
+      id="home"
       className="hero"
       style={{ backgroundImage: `url(${imagemFundo})` }}
     >

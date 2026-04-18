@@ -3,7 +3,7 @@ import aboutImg from '../Imagem/About-img.jpg';
 
 function AboutMe() {
   return (
-    <section className="about-me">
+    <section id="about" className="about-me">
       <div className="container">
         <div className="about-content">
           <img src={aboutImg} alt="Vivianny Khatly" className="about-img" />
